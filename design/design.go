@@ -114,7 +114,7 @@ var _ = Service("test", func() {
 	Method("show", func() {
 		Description("shows a test")
 		HTTP(func() {
-			GET("/:id")
+			GET("/{id}")
 			Params(func() {
 				Param("id", func() {
 					Description("Unique resource ID generated from creation")
